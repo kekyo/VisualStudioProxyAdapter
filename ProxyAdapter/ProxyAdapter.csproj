@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net35;net40;net45</TargetFrameworks>
+    <TargetFramework>net40</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <RootNamespace>ProxyAdapter</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="App.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="App.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\ProxyAdapter\bin\$(Configuration)\net40\ProxyAdapter.dll" Link="ProxyAdapter.dll" />
+    <EmbeddedResource Include="..\ProxyAdapter\bin\$(Configuration)\net40\ProxyAdapter.pdb" Link="ProxyAdapter.pdb" />
+    <EmbeddedResource Include="$(VSWhereDir)vswhere.exe" Link="vswhere.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CenterCLR.RelaxVersioner" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="vswhere" Version="2.8.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
