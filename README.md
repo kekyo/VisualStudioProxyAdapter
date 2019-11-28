@@ -7,15 +7,19 @@ The manner is likely unix-style, so your unix based tools (Git, MinGW and also) 
 
 It'll resident onto task tray, and you can quickly install only double clicking the icon when you'll each update Visual Studio :)
 
-Still under construction...
-
 ## How to use
 
-This installation steps are manually. Current version installation is only double clicking on task tray icon (Skip to next section.)
+[Download pre-built binary (ver0.8.1)](https://github.com/kekyo/VisualStudioProxyAdapter/releases/download/0.8.1/ProxyAdapterInstaller-0.8.1.zip)
+
+Execute ProxyAdapterInstaller.exe, then it shows a syringe icon on task tray. You can double click or choice "Install ProxyAdapter on Visual Studios" context menu for showing right clicked. (Require elevated administrative privilege because will copy ProxyAdapter files and fix configration for installed Visual Studios.)
 
 ![Task tray double clicking installation](Images/tasktray-menu.png)
 
-### Manually installation steps
+Installation completed!
+
+### Optional: Manually installation steps
+
+(This installation steps are manually if you wanna do. You can understand what to do ProxyAdapterInstaller.)
 
 1. Place ProxyAdapter.dll into your Visual Studio IDE environment folder like:
 `C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\`
